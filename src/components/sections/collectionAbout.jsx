@@ -24,7 +24,7 @@ const CollectionAbout = () => {
       </div>
       <div className="text-wrap">
         <h1 className="text-[25px]">{selectedPage?.title}</h1>
-        <div className=" leading-6 customScroll overflow-auto  text-[#4a4a4a]" dangerouslySetInnerHTML={{ __html: selectedPage?.text }}>
+        <div className=" leading-6 max-h-[230px] pr-[15px] customScroll overflow-auto  text-[#4a4a4a]" dangerouslySetInnerHTML={{ __html: selectedPage?.text }}>
         </div>
         <Link href={'/products'} className="flex justify-center py-[15px] w-full mt-6 bg-black text-[#e6e6e6] text-[16px]  transition-all duration-300 hover:scale-105">
           {selectedPage?.buttonText|| "Shop Now"}
