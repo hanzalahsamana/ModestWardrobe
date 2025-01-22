@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
   const [imageUrl, setImageUrl] = useState(product?.images[0]);
 
   const handleMouseEnter = () => {
-    setImageUrl(product?.images[1])
+    setImageUrl(product?.images[1] || product?.images[0]  )
   };
 
   const handleMouseLeave = () => {
