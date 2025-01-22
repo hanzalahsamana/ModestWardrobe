@@ -17,11 +17,11 @@ const Footer = () => {
 
   return (
     <div className="bg-[#21222A] py-10 px-10 text-white w-full max-w-[1500px]">
-      <div className="container mx-auto grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-sm px-4 md:px-0">
+      <div className="container mx-auto grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-sm px-4 md:px-0">
 
         <div>
           <Link href={'/'}>
-            <img src={SiteLogo?.image} alt={SiteLogo?.type} className="mb-4 max-w-[200px]" />
+            <img src={SiteLogo?.image} alt={SiteLogo?.type} className="mb-4 max-w-[200px] max-h-[150px] object-contain" />
           </Link>
           <p>Call Us at:</p>
           <p className="font-bold">{ContactDetails?.phone}</p>

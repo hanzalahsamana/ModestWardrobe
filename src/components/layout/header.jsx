@@ -45,7 +45,7 @@ const Header = () => {
 
 
   return (
-    <header className={`w-full transition-all duration-300 ease-in-out top-0 z-10 ${pathname === "/" ? 'fixed' : 'sticky'} ${pathname === "/k/bsl" && !isScrolled && !isOpen ? 'bg-gradient-to-b from-black to-transparent text-white' : 'bg-white text-black shadow-md '} ${pathname === "/" && 'fixed'}`}>
+    <header className={`w-full transition-all duration-300 ease-in-out top-0 z-10 ${pathname === "/" ? 'fixed' : 'sticky'} ${pathname === "/" && !isScrolled && !isOpen ? 'bg-gradient-to-b from-[#000000c4] to-transparent text-white' : 'bg-white text-black shadow-md '} ${pathname === "/" && 'fixed'}`}>
       <div className="container mx-auto flex justify-between gap-10 items-center max-w-[1200px] py-4 px-[20px] md:px-[40px]">
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu}>
