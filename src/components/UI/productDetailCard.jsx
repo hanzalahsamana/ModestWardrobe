@@ -112,16 +112,17 @@ const ProductDetailCard = ({ product }) => {
 
           <div className={`flex-col sm:flex-row ${styles.buttons}`}>
             <button
+              disabled={!product?.stock ? true : false}
               onClick={handleAddToCart}
-              className="py-[15px] w-full mt-3 bg-white border-black border-[2px] text-[#000000] text-[16px]  transition-all duration-300 hover:scale-105"
+              className={`py-[15px] w-full mt-3 bg-white border-black border-[2px] text-[#000000] text-[16px]  transition-all duration-300 hover:scale-105 ${!product?.stock ? 'cursor-not-allowed' : ''}`}
             >
               {loading ? <ButtonLoader /> : 'Add To Cart'}
             </button>
-            <button onClick={() => {
+            <button disabled={!product?.stock ? true : false} onClick={() => {
               handleAddToCart();
               router.push("/checkout")
             }}
-              className="py-[15px] overflow-hidden w-full mt-3 bg-black text-[#e6e6e6] text-[16px]  transition-all duration-300 hover:scale-105">
+              className={`py-[15px] overflow-hidden w-full mt-3 bg-black text-[#e6e6e6] text-[16px]  transition-all duration-300 hover:scale-105 ${!product?.stock ? 'cursor-not-allowed' : ''}`}>
               Buy It Now
             </button>
           </div>
