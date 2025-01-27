@@ -32,13 +32,13 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-4">ORDER INFO</h4>
           <ul>
-            <li className="mb-2 hover:opacity-[0.7]"><a href="/pages/return-policy">RETURN POLICY</a></li>
-            <li className="mb-2 hover:opacity-[0.7]"><a href="/pages/privacy-policy">PRIVACY POLICY</a></li>
-            <li className="mb-2 hover:opacity-[0.7]"><a href="/pages/terms-of-service">TERMS OF SERVICE</a></li>
-            <li className="mb-2 hover:opacity-[0.7]"><a href="/pages/shipping-policy">SHIPPING POLICY</a></li>
-            <li className="mb-2 hover:opacity-[0.7]"><a href="/pages/about-us">ABOUT US</a></li>
-            <li className="mb-2 hover:opacity-[0.7]"><a href="/pages/faqs">FAQs</a></li>
-            <li><a href="/contact">CONTACT US</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/pages/return-policy">RETURN POLICY</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/pages/privacy-policy">PRIVACY POLICY</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/pages/terms-of-service">TERMS OF SERVICE</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/pages/shipping-policy">SHIPPING POLICY</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/pages/about-us">ABOUT US</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/pages/faqs">FAQs</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/contact">CONTACT US</a></li>
           </ul>
         </div>
 
@@ -46,9 +46,9 @@ const Footer = () => {
           <h4 className="font-bold mb-4">SHOP</h4>
           <ul>
             {categories?.map((category , i) => (
-              <li key={i} className="mb-2 hover:opacity-[0.7]"><a href={`/collection/${category?.link}`}>{category?.name}</a></li>
+              <li key={i} className="mb-2 hover:opacity-[0.7] lowercase"><a href={`/collection/${category?.link}`}>{category?.name}</a></li>
             ))}
-            <li className="mb-2 hover:opacity-[0.7]"><a href="/products">ALL PRODUCTS</a></li>
+            <li className="mb-2 hover:opacity-[0.7] lowercase"><a href="/products">ALL PRODUCTS</a></li>
           </ul>
         </div>
 

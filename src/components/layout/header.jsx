@@ -60,7 +60,7 @@ const Header = () => {
           <Link className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/' ? 'underline font-semibold' : ''}`} href="/" prefetch={true}>
             Home
           </Link>
-          {categories?.slice(0, 2).map((category, i) => (
+          {categories?.slice(0, 3).map((category, i) => (
             <Link
               key={i}
               className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === `/collection/${category?.link}` ? 'underline font-semibold' : ''}`}
@@ -89,7 +89,7 @@ const Header = () => {
 
       </div>
 
-      <div className={`max-w-[1500px] md:hidden transition-all duration-3000 ease-in-out ${isOpen ? 'max-h-[260px]' : 'max-h-[0px] overflow-hidden'}`}>
+      <div className={`max-w-[1500px] md:hidden transition-all duration-3000 ease-in-out ${isOpen ? 'max-h-[310px]' : 'max-h-[0px] overflow-hidden'}`}>
         <nav className="flex flex-col gap-6 p-[30px] py-4">
           <Link href={"/"} prefetch={true}>
             <p className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === '/' ? 'underline font-semibold' : ''}`} onClick={() => {
@@ -99,7 +99,7 @@ const Header = () => {
             </p>
           </Link>
 
-          {categories?.slice(0, 2).map((category, i) => (
+          {categories?.slice(0, 3).map((category, i) => (
 
             <Link key={i} href={`/collection/${category?.link}`} prefetch={true}>
               <p className={`text-[18px] cursor-pointer hover:opacity-[0.6] ${pathname === `/collection/${category?.link}` ? 'underline font-semibold' : ''}`} onClick={() => {

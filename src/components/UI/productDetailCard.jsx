@@ -62,7 +62,7 @@ const ProductDetailCard = ({ product }) => {
         <div className={styles.productDetails}>
           <p className={styles.brandName}>{product.brand}</p>
           <h1>{product.name}</h1>
-          <div className={styles.reviews}>
+          {/* <div className={styles.reviews}>
             <p>
               <span>
                 <FaStar className="text-[orange]" />
@@ -73,7 +73,7 @@ const ProductDetailCard = ({ product }) => {
               </span>{" "}
               4 Review
             </p>
-          </div>
+          </div> */}
 
           <div className={styles.priceSection}>
             <span className={styles.strikeThrough}>
